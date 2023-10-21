@@ -26,6 +26,16 @@ html, body{
     line-height: 1.8rem;
 }
 
+/*LOGO*/
+.logo_text{
+    font-size: 0;
+    margin: 0;
+}
+
+.logo_img{
+    width: 100px;
+}
+
 /* home animation */
 @keyframes mudarbg{
     40% { background-image: url('../img/bg2.jpg');}
