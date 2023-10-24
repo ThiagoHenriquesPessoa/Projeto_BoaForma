@@ -3,6 +3,11 @@ html, body{
     height: 100%;
 }
 
+/*COLORS */
+.blue-logo{
+    background-color: #2dc7d0;
+}
+
 .bloco{
     min-height: 100%;
     padding-top: 94px;
@@ -66,10 +71,23 @@ nav {
     z-index: 997;
   }
   
-  .navbar-fixed nav {
-    position: fixed;
+  nav i,
+  nav [class^="mdi-"], nav [class*="mdi-"],
+  nav i.material-icons {
+    display: block;
+    font-size: 24px;
+    height: 94px;
+    line-height: 94px;
   }
 
+  .sidenav{
+    background: url('../img/textura2.png');
+  }
+
+  .sidenav li>a{
+    color: #fff;
+    font-weight: 100;
+  }
 /* home animation */
 @keyframes mudarbg{
     40% { background-image: url('../img/bg2.jpg');}
