@@ -5,6 +5,7 @@ html, body{
 
 .bloco{
     min-height: 100%;
+    padding-top: 94px;
 }
 
 /* home*/
@@ -34,7 +35,40 @@ html, body{
 
 .logo_img{
     width: 100px;
+    margin-top: 15px;
 }
+
+/*MENU*/
+.navbar{
+    background-color: transparent;
+}
+
+.navbar ul a:hover{
+    background-color: transparent;
+    color: #2dc7d0;
+}
+
+/*CUSTOM*/
+nav {
+    color: #fff;
+    background-color: #ee6e73;
+    width: 100%;
+    height: 94px;
+    line-height: 94px;
+  }
+  nav.nav-extended .nav-wrapper {
+    min-height: 94px;
+    height: auto;
+  }
+  .navbar-fixed {
+    position: absolute;
+    height: 94px;
+    z-index: 997;
+  }
+  
+  .navbar-fixed nav {
+    position: fixed;
+  }
 
 /* home animation */
 @keyframes mudarbg{
