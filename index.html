@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Boa Forma - Seu espaço de saúde</title>
-    <link rel="icon" href="img/fav.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centro Boa Forma - Seu espaço de saúde</title>
+        <link rel="icon" href="img/fav.png">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- MATERIALIZE CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- CUSTOm CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-    <header>
-        <!-- MENUMOBILE -->
-        <ul class="sidenav" id="menu-mobile">
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre a Boa Forma</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Unidades</a></li>
-            <li><a href="">Contatos</a></li>
-        </ul>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- MATERIALIZE CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- CUSTOm CSS -->
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <!-- MENUMOBILE -->
+            <ul class="sidenav" id="menu-mobile">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre a Boa Forma</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#unidades">Unidades</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
 
-        <div class="navbar-fixed">
-            <nav class="navbar z-depth-0">
-                <div class="nav-wrapper container">
+            <div class="navbar-fixed">
+                <nav class="navbar z-depth-0">
+                    <div class="nav-wrapper container">
 
-                    <h1 class="logo_text">Centro Boa Forma - Seu espaço de saúde</h1>
+                        <h1 class="logo_text">Centro Boa Forma - Seu espaço de saúde</h1>
 
-                    <a href="">
-                        <img class="logo_img" src="img/logo.png" alt="Centro Boa Forma">
-                    </a>
+                        <a href="#">
+                            <img class="logo_img" src="img/logo.png" alt="Centro Boa Forma">
+                        </a>
 
-                    <ul class="right light hide-on-med-and-down">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Sobre a Boa Forma</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Unidades</a></li>
-                        <li><a href="">Contatos</a></li>
-                    </ul>
+                        <ul class="right light hide-on-med-and-down">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#sobre">Sobre a Boa Forma</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#unidades">Unidades</a></li>
+                            <li><a href="#contato">Contatos</a></li>
+                        </ul>
 
-                    <a href="#" class="sidenav-trigger right" data-target="menu-mobile">
-                        <i class="material-icons">menu</i>
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </header>
-        <section class="home bloco">
+                        <a href="#" class="sidenav-trigger right" data-target="menu-mobile">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HOME -->
+        <section class="home bloco scrollspy" id="home">
             <div class="row container banner">
                 <div class="col s12 center">
                     <h2 class="white-text">O melhor treinamento funcional da região.</h2>
@@ -61,7 +64,29 @@
                     </div>
                 </div>
             </div>    
-        </section>    
+        </section>  
+        
+        <!-- SOBRE -->
+        <section class="sobre bloco scrollspy" id="sobre">
+            <div class="row container">
+                <div class="col s12 center">
+                    <h2 class="light">Sobre nós</h2>
+                </div>
+                <div class="col s12 l6">
+                    <p class="light">"Venha transformar sua vida no Centro de Treinamento Boa Forma! Aqui, dedicamos todos os nossos esforços para ajudar você a atingir seus objetivos de saúde e bem-estar. Com uma equipe de instrutores altamente qualificados e equipamentos de última geração, oferecemos um ambiente acolhedor e motivador para o seu treinamento.
+
+                        No Boa Forma, a personalização é a chave. Criamos programas sob medida para atender às suas necessidades e metas específicas. Se você busca emagrecimento, ganho de massa muscular, condicionamento físico ou simplesmente um estilo de vida mais saudável, estamos aqui para guiá-lo a cada passo do caminho.
+                        
+                        Além disso, oferecemos uma variedade de aulas, desde yoga e pilates até treinamento funcional e HIIT, para manter sua rotina sempre desafiadora e interessante. Nossa missão é garantir que você alcance a sua melhor versão.
+                        
+                        Não espere mais para investir em si mesmo. Junte-se a nós no Centro de Treinamento Boa Forma e descubra o caminho para uma vida mais saudável, feliz e cheia de energia. Sua transformação começa aqui!"</p>
+                </div>
+                <div class="col s12 l6">
+
+                </div>
+            </div>
+
+        </section>
     
         <!-- JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -69,9 +94,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <!-- JAVASCRIPT -->
         <script>
+            //INICIALIZACAO
             $(document).ready(function(){
                 //MENU MOBILE
                 $(".sidenav").sidenav();
+                //LINK INTERNO
+                $(".scrollspy").scrollSpy({
+                    scrollOffset: 0
+                });
+            });
+
+            //ADICIONANDO NAVCOLOR
+            $(window).on("scroll", function(){
+                if($(window).scrollTop() > 100){
+                    $(".navbar").addClass("nav-color");
+                }else{
+                    $(".navbar").removeClass("nav-color");
+                }
             });
         </script>
     </body>
