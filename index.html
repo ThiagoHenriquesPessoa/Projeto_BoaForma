@@ -82,10 +82,19 @@
                         Não espere mais para investir em si mesmo. Junte-se a nós no Centro de Treinamento Boa Forma e descubra o caminho para uma vida mais saudável, feliz e cheia de energia. Sua transformação começa aqui!"</p>
                 </div>
                 <div class="col s12 l6">
-
+                    <div class="carousel carousel-slider" data-indicators="true">
+                        <a href="#" class="carousel-item">
+                            <img src="img/banner-01.jpg">
+                        </a>
+                        <a href="#" class="carousel-item">
+                            <img src="img/banner-02.jpg">
+                        </a>
+                        <a href="#" class="carousel-item">
+                            <img src="img/banner-03.jpg">
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </section>
     
         <!-- JQUERY -->
@@ -101,6 +110,11 @@
                 //LINK INTERNO
                 $(".scrollspy").scrollSpy({
                     scrollOffset: 0
+                });
+                //CAROUSEL
+                $(".carousel.carousel-slider").carousel({
+                    fullwidth: true,
+                    indicators: true 
                 });
             });
 
