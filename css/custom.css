@@ -76,10 +76,11 @@ width: 100px;
 border-top: 1px solid #2dc7d0;
 margin: 15px auto;
 }
-.sobre p{
-    line-height: 1.8rem;
-    text-align: justify;
-}
+.sobre p{line-height: 1.8rem; text-align: justify;}
+.sobre .missao-visao-valores{padding: 20px 0; margin-top: 20px;}
+.sobre .missao-visao-valores .icon{color: #fff;}
+.sobre .missao-visao-valores h3{font-size: 1.5rem; color: #fff; text-transform: uppercase;}
+.sobre .missao-visao-valores p{color: #fff; text-align: center;}
 
 /*CUSTOM*/
 nav {
@@ -118,37 +119,21 @@ nav {
   }
 
   /* MEDIA */
-@media only screen and (max-width: 480px) {
-    .carousel-item img {
-        max-width: 100%; /* Isso fará com que as imagens se ajustem ao tamanho da tela */
-        height: auto; /* Mantém a proporção da imagem */
-    }
+@media only screen and (max-width: 480px) {    
+    .container{ width: 80%; }
+    .carousel-item img { max-width: 100%; height: auto; }
 }
 
 @media only screen and (min-width: 601px) {
-    .banner{
-        padding-top: 4.5rem;
-    }
-    .banner h2{
-        font-size: 4rem;
-    }
-    .container{
-        width: 95%;
-    }
-    .carousel-item img {
-        max-width: 100%; /* Isso fará com que as imagens se ajustem ao tamanho da tela */
-        height: auto; /* Mantém a proporção da imagem */
-    }
+    .banner{ padding-top: 4.5rem; }
+    .banner h2{ font-size: 4rem; }
+    .container{ width: 85%; }
+    .carousel-item img { max-width: 100%; height: auto; }
  }
   
 @media only screen and (min-width: 993px) {
-    .banner{
-        padding-top: 5rem;
-    }
-    .banner h2{
-        font-size: 4rem;
-    }
-    .container{
-        width: 90%;
-    }
+    .banner{ padding-top: 5rem; }
+    .banner h2{ font-size: 4rem; }
+    .container{ width: 90%; }
+    .carousel-item img { max-width: 100%; height: auto; }
 }
