@@ -3,6 +3,7 @@ html, body{
     height: 100%;
 }
 
+
 /*COLORS */
 .blue-logo{
     background-color: #2dc7d0;
@@ -78,6 +79,7 @@ html, body{
     margin: 15px auto;}
 .servicos p{line-height: 1.8rem; color: #fff;}
 .servicos article div p{color: #212121;}
+.servicos .btn-horario{margin-bottom: 20px;}
 
 /*CUSTOM*/
 nav {
@@ -87,33 +89,24 @@ nav {
     height: 94px;
     line-height: 94px;
   }
-  nav.nav-extended .nav-wrapper {
-    min-height: 94px;
-    height: auto;
-  }
-  .navbar-fixed {
-    position: absolute;
-    height: 94px;
-    z-index: 997;
-  }
+  nav.nav-extended .nav-wrapper { min-height: 94px; height: auto; }
+  .navbar-fixed { position: absolute; height: 94px; z-index: 997; }
   
   nav i,
   nav [class^="mdi-"], nav [class*="mdi-"],
-  nav i.material-icons {
-    display: block;
-    font-size: 24px;
-    height: 94px;
-    line-height: 94px;
-  }
+  nav i.material-icons { display: block; font-size: 24px; height: 94px; line-height: 94px; }
 
-  .sidenav{
-    background: url('../img/textura2.png');
-  }
+  .sidenav{ background: url('../img/textura2.png'); }
+  .sidenav li>a{color: #fff; font-weight: 100; }
 
-  .sidenav li>a{
-    color: #fff;
-    font-weight: 100;
-  }
+  .row{ margin-bottom: 0;}
+
+  .card div p{text-align:justify; text-indent: 20px;}
+
+  .tabs{background-color: #222;}
+  .tabs .tab a{color: #fff;}
+  .tabs .tab a:hover,  .tabs .tab a:active{color: #2dc7d0;}
+  .tabs .indicator {background-color: #2dc7d0;}
 
   /* MEDIA */
 @media only screen and (max-width: 480px) {    
