@@ -81,6 +81,12 @@ html, body{
 .servicos article div p{color: #212121;}
 .servicos .btn-horario{margin-bottom: 20px;}
 
+/* UNIDADES */
+.unidades {background-image: url("../img/bg-unidades.jpg"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+.unidades h2{font-size: 2rem; color: #fff; text-transform: uppercase;}
+.unidades h2::after{content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
+.unidades p{line-height: 1.8rem; color: #fff;}
+
 /*CUSTOM*/
 nav {
     color: #fff;
@@ -112,6 +118,7 @@ nav {
 @media only screen and (max-width: 480px) {    
     .container{ width: 80%; }
     .carousel-item img { max-width: 100%; height: auto; }
+    .card-image-horizontal{display: none;}
 }
 
 @media only screen and (min-width: 601px) {
