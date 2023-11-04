@@ -100,7 +100,7 @@ nav {
   
   nav i,
   nav [class^="mdi-"], nav [class*="mdi-"],
-  nav i.material-icons { display: block; font-size: 24px; height: 94px; line-height: 94px; }
+  nav i.material-icons, nav a.button-collapse i { display: block; font-size: 24px; height: 94px; line-height: 94px; }
 
   .sidenav{ background: url('../img/textura2.png'); }
   .sidenav li>a{color: #fff; font-weight: 100; }

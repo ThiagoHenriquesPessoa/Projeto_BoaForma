@@ -18,11 +18,11 @@
         <header>
             <!-- MENUMOBILE -->
             <ul class="sidenav" id="menu-mobile">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre a Boa Forma</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#unidades">Unidades</a></li>
-                <li><a href="#contato">Contatos</a></li>
+                <li><a class="hide-menu" href="#home">Home</a></li>
+                <li><a class="hide-menu" href="#sobre">Sobre a Boa Forma</a></li>
+                <li><a class="hide-menu" href="#servicos">Serviços</a></li>
+                <li><a class="hide-menu" href="#unidades">Unidades</a></li>
+                <li><a class="hide-menu" href="#contato">Contatos</a></li>
             </ul>
 
             <div class="navbar-fixed">
@@ -36,11 +36,11 @@
                         </a>
 
                         <ul class="right light hide-on-med-and-down">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#sobre">Sobre a Boa Forma</a></li>
-                            <li><a href="#servicos">Serviços</a></li>
-                            <li><a href="#unidades">Unidades</a></li>
-                            <li><a href="#contato">Contatos</a></li>
+                            <li><a class="hide-menu" href="#home">Home</a></li>
+                            <li><a class="hide-menu" href="#sobre">Sobre a Boa Forma</a></li>
+                            <li><a class="hide-menu" href="#servicos">Serviços</a></li>
+                            <li><a class="hide-menu" href="#unidades">Unidades</a></li>
+                            <li><a class="hide-menu" href="#contato">Contatos</a></li>
                         </ul>
 
                         <a href="#" class="sidenav-trigger right" data-target="menu-mobile">
@@ -59,8 +59,8 @@
                     <p class="white-text light">Um novo conceito em prevenção, promoção e reabilitação da saude para quem busca melhora do 
                     condicionamento e emagrecimento, alem de ser divertido e desafiador. Quer experimentar?</p>
                     <div class="row">
-                        <a class="btn btn-large blue-logo">Sobre nós</a>
-                        <a class="btn btn-large white black-text">Contato</a>
+                        <a href="#sobre" class="btn btn-large blue-logo">Sobre nós</a>
+                        <a href="#contato" class="btn btn-large white black-text">Contato</a>
                     </div>
                 </div>
             </div>    
@@ -565,6 +565,10 @@
                 $(".modal").modal();
                 //TABS
                 $("ul.tabs").tabs();
+                //ESCONDER MENU AO CLICAR
+                $(".hide-menu").click(function(){
+                    $(".sidenav").sidenav("close");
+                });
             });
 
             //ADICIONANDO NAVCOLOR
